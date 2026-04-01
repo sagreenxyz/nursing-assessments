@@ -1,0 +1,31 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Sepsis & Critical Care Assessment Tools" description="Sepsis and critical care assessment tools used in nursing">
+  <a href={`${import.meta.env.BASE_URL}/`} class="back-link">← Back to all categories</a>
+  <div class="badge">Sepsis &amp; Critical Care</div>
+  <h1>Sepsis &amp; Critical Care Assessment Tools</h1>
+  <p>Tools for identifying sepsis, measuring organ dysfunction, and assessing illness severity in critically ill patients.</p>
+
+  <div class="tool-list">
+    <h2>Assessment Tools</h2>
+    <ul>
+      <li><strong>qSOFA (Quick SOFA)</strong> — Rapid sepsis screening outside the ICU: altered mental status, respiratory rate ≥22/min, systolic BP ≤100 mmHg. Score ≥2 warrants further evaluation for sepsis.</li>
+      <li><strong>SOFA (Sequential Organ Failure Assessment)</strong> — ICU organ failure scoring across respiratory, coagulation, liver, cardiovascular, neurological, and renal systems. Score correlates with ICU mortality.</li>
+      <li><strong>APACHE II (Acute Physiology and Chronic Health Evaluation II)</strong> — Predicts ICU mortality using 12 acute physiology parameters, age, and chronic health status. Score 0–71; widely used for benchmarking.</li>
+      <li><strong>SAPS II (Simplified Acute Physiology Score II)</strong> — 17-variable ICU mortality prediction model; includes physiological parameters, age, type of admission, and chronic conditions.</li>
+      <li><strong>SAPS III (Simplified Acute Physiology Score III)</strong> — Updated ICU scoring system using 20 variables from hospital admission, acute physiology, and chronic health status. Validated internationally.</li>
+      <li><strong>SIRS Criteria (Systemic Inflammatory Response Syndrome)</strong> — Identifies systemic inflammation using two or more of: temperature &gt;38°C or &lt;36°C, HR &gt;90, RR &gt;20 or PaCO₂ &lt;32, WBC &gt;12,000 or &lt;4,000.</li>
+      <li><strong>Sepsis-3 Criteria</strong> — Updated consensus definition: life-threatening organ dysfunction (SOFA increase ≥2) caused by dysregulated host response to infection.</li>
+      <li><strong>TISS-28 (Therapeutic Intervention Scoring System)</strong> — Measures nursing workload and ICU resource utilization by quantifying therapeutic interventions over 24 hours.</li>
+      <li><strong>LODS (Logistic Organ Dysfunction Score)</strong> — Six-organ dysfunction model; calculates probability of ICU mortality using neurologic, cardiovascular, renal, pulmonary, hematologic, and hepatic variables.</li>
+      <li><strong>MODS (Multiple Organ Dysfunction Score)</strong> — Assesses dysfunction severity in six organ systems: respiratory, renal, hepatic, cardiovascular, hematologic, and neurologic.</li>
+      <li><strong>Lactate Clearance Assessment</strong> — Serial serum lactate measurements to guide sepsis resuscitation. Clearance ≥10–20% over 2 hours is associated with improved outcomes.</li>
+      <li><strong>Shock Index</strong> — Heart rate divided by systolic blood pressure. Normal &lt;1.0; index &gt;1.0 suggests hemodynamic compromise; &gt;1.4 indicates critical instability.</li>
+      <li><strong>MAP Goals Assessment</strong> — Mean arterial pressure monitoring; target MAP ≥65 mmHg in septic shock (Surviving Sepsis Campaign guideline).</li>
+      <li><strong>CVP Monitoring Parameters</strong> — Central venous pressure 8–12 mmHg targeted in early sepsis resuscitation protocols (historically); fluid responsiveness now preferred over static CVP targets.</li>
+      <li><strong>Urine Output Adequacy Criteria</strong> — Minimum adequate urine output of 0.5 mL/kg/hr indicates adequate renal perfusion; used in fluid resuscitation monitoring and AKI assessment.</li>
+    </ul>
+  </div>
+</Layout>

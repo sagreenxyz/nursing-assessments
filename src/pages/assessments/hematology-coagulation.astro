@@ -1,0 +1,22 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Hematology & Coagulation Assessment Tools" description="Hematology and coagulation assessment tools used in nursing">
+  <a href={`${import.meta.env.BASE_URL}/`} class="back-link">← Back to all categories</a>
+  <div class="badge">Hematology &amp; Coagulation</div>
+  <h1>Hematology &amp; Coagulation Assessment Tools</h1>
+  <p>Clinical prediction rules for thromboembolism diagnosis, heparin-induced thrombocytopenia, and coagulopathy assessment.</p>
+
+  <div class="tool-list">
+    <h2>Assessment Tools</h2>
+    <ul>
+      <li><strong>Wells Criteria for DVT</strong> — Pre-test probability score for deep vein thrombosis. Scores clinical signs, active cancer, immobility, tenderness, swelling, and alternative diagnosis likelihood. Score ≤0 = low probability; ≥2 = high probability.</li>
+      <li><strong>Wells Criteria for PE</strong> — Pre-test probability for pulmonary embolism. Variables include DVT signs, no alternative diagnosis, HR &gt;100, immobilization, prior PE/DVT, hemoptysis, malignancy. Score ≤4 = PE unlikely.</li>
+      <li><strong>Geneva Score (Revised)</strong> — PE probability without requiring subjective physician judgment: age, prior PE/DVT, surgery, active cancer, heart rate, unilateral leg pain/edema, hemoptysis.</li>
+      <li><strong>PERC Rule (PE Rule-Out Criteria)</strong> — Eight-criterion rule to exclude PE without further testing in low-pretest-probability patients: age &lt;50, HR &lt;100, SpO₂ ≥95%, no unilateral leg swelling, no hemoptysis, no recent surgery/trauma, no prior DVT/PE, no exogenous estrogen.</li>
+      <li><strong>4T Score (HIT Probability)</strong> — Heparin-induced thrombocytopenia probability: Thrombocytopenia degree, Timing of platelet fall, Thrombosis or other sequelae, oTher cause for thrombocytopenia. Score 0–8; ≥4 = intermediate/high probability; warrants heparin cessation.</li>
+      <li><strong>DIC Scoring (ISTH Criteria)</strong> — Disseminated intravascular coagulation scoring using platelet count, D-dimer, prothrombin time prolongation, and fibrinogen level. Score ≥5 compatible with overt DIC.</li>
+    </ul>
+  </div>
+</Layout>

@@ -1,0 +1,24 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Rheumatology Assessment Tools" description="Rheumatology assessment tools used in nursing">
+  <a href={`${import.meta.env.BASE_URL}/`} class="back-link">← Back to all categories</a>
+  <div class="badge">Rheumatology</div>
+  <h1>Rheumatology Assessment Tools</h1>
+  <p>Disease activity indices and classification criteria for rheumatoid arthritis, lupus, and other rheumatic conditions.</p>
+
+  <div class="tool-list">
+    <h2>Assessment Tools</h2>
+    <ul>
+      <li><strong>DAS28 (Disease Activity Score-28)</strong> — Rheumatoid arthritis disease activity using 28 tender and swollen joint counts, ESR or CRP, and patient global assessment. Remission &lt;2.6; high activity &gt;5.1.</li>
+      <li><strong>CDAI (Clinical Disease Activity Index)</strong> — RA activity without laboratory values: tender joints, swollen joints, patient global, evaluator global (0–76). Remission ≤2.8.</li>
+      <li><strong>SDAI (Simplified Disease Activity Index)</strong> — CDAI plus CRP; correlates closely with DAS28. Remission ≤3.3.</li>
+      <li><strong>SLEDAI (SLE Disease Activity Index)</strong> — Lupus disease activity across 24 items (neurological, vascular, musculoskeletal, renal, immunological, constitutional, serological). Score &gt;4 = mild; &gt;12 = high activity.</li>
+      <li><strong>ACR/EULAR Classification Criteria</strong> — 2010 RA classification criteria; 2012 SLE criteria; other criteria for SSc, myositis, Sjögren's syndrome; used in research and informing clinical diagnosis.</li>
+      <li><strong>HAQ (Health Assessment Questionnaire)</strong> — 20-item functional disability assessment across 8 ADL categories; Disability Index 0 (no disability) to 3 (severe disability). Widely used in RA and other rheumatic conditions.</li>
+      <li><strong>Gout Flare Assessment</strong> — Clinical evaluation using joint aspiration (gold standard for monosodium urate crystals), serum uric acid, and 2015 ACR/EULAR gout classification criteria score.</li>
+      <li><strong>Tender and Swollen Joint Count (28-joint)</strong> — Systematic examination of 28 joints (bilateral shoulders, elbows, wrists, MCPs, PIPs, and knees) for tenderness and swelling; core component of RA disease activity indices.</li>
+    </ul>
+  </div>
+</Layout>

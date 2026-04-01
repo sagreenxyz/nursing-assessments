@@ -1,0 +1,63 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const base = import.meta.env.BASE_URL;
+
+const categories = [
+  { slug: 'pain-comfort', title: 'Pain & Comfort', tools: 'NRS/VAS, FLACC, CPOT, BPS, PAINAD, FACES, CRIES, NIPS, COMFORT Scale' },
+  { slug: 'fall-risk', title: 'Fall Risk', tools: 'Morse Fall Scale, STRATIFY, Hendrich II, STEADI, Berg Balance, Tinetti POMA, TUG' },
+  { slug: 'neurological', title: 'Neurological', tools: 'GCS, FOUR Score, NIHSS, CIWA-Ar, COWS, CAM, ABCD², CPSS, Rankin Scale, UPDRS, EDSS' },
+  { slug: 'delirium-agitation', title: 'Delirium & Agitation', tools: 'CAM-ICU, 3D-CAM, bCAM, DOS Scale, RASS, SAS, Ramsay Scale, BARS, MAAS, CAM-S' },
+  { slug: 'respiratory-airway', title: 'Respiratory & Airway', tools: 'NEWS/NEWS2, MEWS, CURB-65, Borg Scale, STOP-BANG, CAT, LEMON, Mallampati, RSB Index, P/F Ratio' },
+  { slug: 'sepsis-critical-care', title: 'Sepsis & Critical Care', tools: 'qSOFA, SOFA, APACHE II, SAPS II/III, SIRS, Sepsis-3, TISS-28, Shock Index, Lactate Clearance' },
+  { slug: 'hemodynamic-cardiovascular', title: 'Hemodynamic & Cardiovascular', tools: 'Killip, CHADS₂/CHA₂DS₂-VASc, TIMI, HAS-BLED, ABI, HEART Score, GRACE, NYHA, Brugada' },
+  { slug: 'triage-emergency', title: 'Triage & Emergency', tools: 'ESI, Manchester Triage, CTAS, ATS, START Triage, JumpSTART, SALT Triage, KTAS' },
+  { slug: 'mental-health-psychiatric', title: 'Mental Health & Psychiatric', tools: 'PHQ-2/9, GAD-7, C-SSRS, SADPERSONS, BAI, BDI, HAM-A, HAM-D, PANSS, PCL-5, EPDS' },
+  { slug: 'substance-use-withdrawal', title: 'Substance Use & Withdrawal', tools: 'CAGE, AUDIT/AUDIT-C, DAST-10, CIWA-Ar, CIWA-B, COWS, CRAFFT, SBIRT' },
+  { slug: 'cognitive-dementia', title: 'Cognitive & Dementia', tools: 'MMSE, MoCA, CDR, SLUMS, AMT, Clock Drawing, Mini-Cog, GPCOG, FAST Scale, GDS' },
+  { slug: 'nutritional-skin-integrity', title: 'Nutritional & Skin Integrity', tools: 'Braden Scale, Norton Scale, Waterlow Scale, MNA, MUST, NRS-2002, SGA, STAMP' },
+  { slug: 'wound-skin-assessment', title: 'Wound & Skin Assessment', tools: 'NPUAP Staging, BWAT, Wagner Grading, TBSA, Lund-Browder, Rule of Nines, PASI, REEDA' },
+  { slug: 'functional-status-mobility', title: 'Functional Status & Mobility', tools: 'Barthel Index, Katz Index, FIM, IADL Scale, 6-Minute Walk Test, Lovett Scale, Ashworth Scale' },
+  { slug: 'rehabilitation-stroke', title: 'Rehabilitation & Stroke Recovery', tools: 'Fugl-Meyer, ARAT, SIS, NIHSS Serial Monitoring, DHI, ABC Scale' },
+  { slug: 'frailty-geriatric', title: 'Frailty & Geriatric', tools: 'CGA, FRAIL Scale, Clinical Frailty Scale, Edmonton Frail Scale, Fried Frailty, Zarit Scale' },
+  { slug: 'renal-fluid', title: 'Renal & Fluid', tools: 'RIFLE Criteria, AKIN Criteria, KDIGO Staging, MDRD/CKD-EPI, Cockroft-Gault, Fluid Balance' },
+  { slug: 'gastrointestinal-hepatic', title: 'Gastrointestinal & Hepatic', tools: 'Child-Pugh, MELD, Blatchford, Rockall, Ranson, BISAP, Alvarado, Harvey-Bradshaw, MAYO' },
+  { slug: 'endocrine-metabolic', title: 'Endocrine & Metabolic', tools: 'DKA Severity, HHS Criteria, Burch-Wartofsky, FINDRISC, ADA Risk Test, Metabolic Syndrome' },
+  { slug: 'hematology-coagulation', title: 'Hematology & Coagulation', tools: 'Wells DVT/PE, Geneva Score, PERC Rule, 4T Score (HIT), DIC/ISTH Criteria' },
+  { slug: 'oncology-palliative', title: 'Oncology & Palliative', tools: 'ECOG, Karnofsky, Distress Thermometer, ESAS, PPS, MASCC, Mucositis Grading, NEST' },
+  { slug: 'infectious-disease', title: 'Infectious Disease', tools: 'PORT/PSI Score, Centor Criteria, CDI Severity, HIV/AIDS WHO Staging, HAI Surveillance' },
+  { slug: 'orthopedic-musculoskeletal', title: 'Orthopedic & Musculoskeletal', tools: 'Ottawa Rules, NEXUS Criteria, Canadian C-Spine, FRAX, Harris Hip, WOMAC, Compartment Syndrome' },
+  { slug: 'rheumatology', title: 'Rheumatology', tools: 'DAS28, CDAI/SDAI, SLEDAI, ACR/EULAR Criteria, HAQ, Gout Flare, Tender/Swollen Joint Count' },
+  { slug: 'ophthalmology-ent', title: 'Ophthalmology & ENT', tools: 'Snellen Chart, Rosenbaum Screener, RAPD, Tympanogram, Rinne/Weber Tests, Hearing Handicap' },
+  { slug: 'obstetric-maternal', title: 'Obstetric & Maternal', tools: 'Bishop Score, Leopold Maneuvers, NST, BPP, NICHD FHR, Friedman Curve, HELLP, LATCH, EPDS' },
+  { slug: 'neonatal', title: 'Neonatal', tools: 'APGAR Score, Finnegan Scale, Silverman-Anderson, SNAPPE-II, Ballard Score, CRIES, NIPS' },
+  { slug: 'pediatric', title: 'Pediatric', tools: 'Pediatric GCS, PEWS, Pediatric SOFA, PRISM III, Broselow Tape, FLACC, M-CHAT, ASQ, HEADSS' },
+  { slug: 'safety-risk-management', title: 'Safety & Risk Management', tools: 'Braden Scale, Morse Fall Scale, WHO Surgical Checklist, SBAR, I-PASS, HEWS, Phlebitis Scale' },
+  { slug: 'trauma', title: 'Trauma', tools: 'ISS, Revised Trauma Score, TRISS, FAST Exam' },
+];
+---
+
+<Layout title="Nursing Assessment Tools Reference">
+  <h1>Comprehensive Nursing Assessment Tools Reference</h1>
+  <p style="color: #64748b; margin-bottom: 1.5rem; font-size: 1.0625rem;">
+    A near-comprehensive reference of assessment tools used across nursing specialties and care settings.
+  </p>
+
+  <div class="intro-box">
+    <p>
+      This reference covers <strong>{categories.length} specialty categories</strong> and hundreds of validated clinical assessment tools.
+      Select a category below to explore individual tools, their purposes, and clinical applications.
+      Not every nurse will use all of these tools; usage depends on the clinical setting, patient population, and institutional protocols.
+    </p>
+  </div>
+
+  <h2>Assessment Categories</h2>
+  <div class="card-grid">
+    {categories.map(cat => (
+      <a href={`${base}/assessments/${cat.slug}`} class="category-card">
+        <h3>{cat.title}</h3>
+        <p>{cat.tools}</p>
+      </a>
+    ))}
+  </div>
+</Layout>

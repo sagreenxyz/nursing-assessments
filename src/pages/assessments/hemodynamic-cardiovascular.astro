@@ -1,0 +1,30 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Hemodynamic & Cardiovascular Assessment Tools" description="Hemodynamic and cardiovascular assessment tools used in nursing">
+  <a href={`${import.meta.env.BASE_URL}/`} class="back-link">← Back to all categories</a>
+  <div class="badge">Hemodynamic &amp; Cardiovascular</div>
+  <h1>Hemodynamic &amp; Cardiovascular Assessment Tools</h1>
+  <p>Tools for cardiac risk stratification, anticoagulation management, and hemodynamic monitoring.</p>
+
+  <div class="tool-list">
+    <h2>Assessment Tools</h2>
+    <ul>
+      <li><strong>Killip Classification</strong> — Four-class heart failure severity after MI: Class I (no signs), Class II (S3/crackles), Class III (pulmonary edema), Class IV (cardiogenic shock). Predicts in-hospital mortality.</li>
+      <li><strong>CHADS₂ Score</strong> — Stroke risk in atrial fibrillation: Congestive heart failure, Hypertension, Age ≥75, Diabetes, prior Stroke/TIA. Score ≥2 warrants anticoagulation.</li>
+      <li><strong>CHA₂DS₂-VASc Score</strong> — Refined AFib stroke risk: adds vascular disease, age 65–74, and female sex to CHADS₂. Score ≥2 (male) or ≥3 (female) indicates anticoagulation benefit.</li>
+      <li><strong>TIMI Score</strong> — ACS risk stratification (NSTEMI/UA version): 7 variables scored 0–7 predict 14-day risk of ischemic events. Guides invasive vs. conservative strategy.</li>
+      <li><strong>HAS-BLED Score</strong> — Bleeding risk on anticoagulation: Hypertension, Abnormal renal/liver function, Stroke history, Bleeding history/predisposition, Labile INR, Elderly (&gt;65), Drugs/alcohol. Score ≥3 = high bleeding risk.</li>
+      <li><strong>ABI (Ankle-Brachial Index)</strong> — Ratio of ankle to brachial systolic pressure. ABI &lt;0.9 indicates peripheral arterial disease; &lt;0.4 is critical limb ischemia.</li>
+      <li><strong>HEART Score</strong> — Chest pain risk stratification in ED: History, ECG, Age, Risk factors, Troponin. Score ≥4 warrants observation; ≥7 warrants early invasive strategy.</li>
+      <li><strong>GRACE Score (Global Registry of Acute Coronary Events)</strong> — In-hospital and 6-month mortality prediction in ACS using 8 clinical variables; guides decision for invasive evaluation.</li>
+      <li><strong>PURSUIT Score</strong> — 30-day death or MI risk in NSTEMI patients; used in clinical trials to guide platelet receptor antagonist therapy.</li>
+      <li><strong>NYHA Functional Classification</strong> — Heart failure functional capacity: Class I (no limitation) to Class IV (symptoms at rest). Guides therapy and prognosis.</li>
+      <li><strong>Lown Grading System</strong> — Ventricular ectopy classification from Grade 0 (none) to Grade 5 (R-on-T phenomenon). Higher grades associated with sudden cardiac death risk.</li>
+      <li><strong>Sgarbossa Criteria</strong> — ECG criteria for diagnosing MI in the presence of LBBB. Score ≥3 points has high specificity; modified criteria improve sensitivity using proportional discordance.</li>
+      <li><strong>Wellens Syndrome Criteria</strong> — ECG pattern of biphasic or deeply inverted T-waves in V2–V3 during pain-free period indicating critical LAD stenosis; high risk for anterior MI.</li>
+      <li><strong>Brugada Criteria</strong> — ECG algorithm differentiating ventricular tachycardia from supraventricular tachycardia with aberrant conduction in wide complex tachycardia.</li>
+    </ul>
+  </div>
+</Layout>
