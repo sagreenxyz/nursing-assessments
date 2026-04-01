@@ -1,0 +1,24 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Triage & Emergency Assessment Tools" description="Triage and emergency assessment tools used in nursing">
+  <a href={`${import.meta.env.BASE_URL}/`} class="back-link">← Back to all categories</a>
+  <div class="badge">Triage &amp; Emergency</div>
+  <h1>Triage &amp; Emergency Assessment Tools</h1>
+  <p>Systematic tools for prioritizing patient care in emergency departments and mass casualty incidents.</p>
+
+  <div class="tool-list">
+    <h2>Assessment Tools</h2>
+    <ul>
+      <li><strong>ESI (Emergency Severity Index)</strong> — Five-level ED triage system: Level 1 (immediate, life-threatening) to Level 5 (non-urgent). Incorporates acuity and anticipated resource needs.</li>
+      <li><strong>Manchester Triage System (MTS)</strong> — Five-category triage using flowcharts for chief complaints, assigning priority: Immediate, Very Urgent, Urgent, Standard, Non-Urgent.</li>
+      <li><strong>Canadian Triage and Acuity Scale (CTAS)</strong> — Five-level national ED triage standard in Canada: Level I (Resuscitation) to Level V (Non-Urgent). Includes pediatric considerations.</li>
+      <li><strong>Australasian Triage Scale (ATS)</strong> — Five-category scale with defined maximum waiting times: 1 (immediate) to 5 (120 minutes). Standard in Australian and New Zealand EDs.</li>
+      <li><strong>START Triage</strong> — Mass casualty simple triage: Sort patients by walking ability, respiratory status, perfusion, and mental status into Immediate, Delayed, Minimal, or Expectant categories.</li>
+      <li><strong>JumpSTART Triage</strong> — Pediatric adaptation of START for mass casualty incidents. Accounts for physiological differences in children, including rescue breathing step for apneic children.</li>
+      <li><strong>SALT Triage</strong> — Sort, Assess, Lifesaving Interventions, Treatment/Transport framework for mass casualty incidents endorsed by national emergency management organizations.</li>
+      <li><strong>KTAS (Korean Triage and Acuity Scale)</strong> — Five-level Korean ED triage system adapted from CTAS; used in Korean emergency departments with standardized presenting complaint categories.</li>
+    </ul>
+  </div>
+</Layout>

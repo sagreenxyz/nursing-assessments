@@ -1,0 +1,24 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Renal & Fluid Assessment Tools" description="Renal and fluid assessment tools used in nursing">
+  <a href={`${import.meta.env.BASE_URL}/`} class="back-link">← Back to all categories</a>
+  <div class="badge">Renal &amp; Fluid</div>
+  <h1>Renal &amp; Fluid Assessment Tools</h1>
+  <p>Staging systems and formulas for acute kidney injury, chronic kidney disease, and fluid balance assessment.</p>
+
+  <div class="tool-list">
+    <h2>Assessment Tools</h2>
+    <ul>
+      <li><strong>RIFLE Criteria</strong> — AKI staging by Risk, Injury, Failure, Loss, End-stage: based on serum creatinine rise and urine output over time. Risk = ×1.5 creatinine or &lt;0.5 mL/kg/hr ×6 hours.</li>
+      <li><strong>AKIN Criteria (Acute Kidney Injury Network)</strong> — Revised AKI staging: Stage 1 (creatinine ×1.5–1.9), Stage 2 (×2–2.9), Stage 3 (×3 or RRT). Integrates 48-hour creatinine change.</li>
+      <li><strong>KDIGO Staging</strong> — Kidney Disease Improving Global Outcomes unified AKI and CKD staging incorporating creatinine, urine output, and GFR criteria for AKI; GFR and albuminuria categories for CKD.</li>
+      <li><strong>MDRD Equation</strong> — Four-variable GFR estimation: creatinine, age, sex, race. Validated for CKD staging; most accurate at GFR &lt;60 mL/min/1.73 m².</li>
+      <li><strong>CKD-EPI Equation</strong> — More accurate GFR estimation across the full range; recommended by KDIGO over MDRD for routine clinical use.</li>
+      <li><strong>Cockcroft-Gault Formula</strong> — Creatinine clearance estimation: [(140−age) × weight / (72 × creatinine)] × 0.85 (female). Used for medication dosing adjustments in renal impairment.</li>
+      <li><strong>Fluid Balance Assessment</strong> — Cumulative intake (IV fluids, oral intake) minus output (urine, stool, drains, insensible losses) over 24 hours; guides fluid management and resuscitation targets.</li>
+      <li><strong>Daily Weight Monitoring</strong> — Serial weights used to detect fluid retention or loss; acute changes &gt;1–2 kg over 24–48 hours indicate clinically significant fluid shifts in heart failure and renal management.</li>
+    </ul>
+  </div>
+</Layout>

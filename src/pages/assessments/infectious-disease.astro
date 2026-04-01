@@ -1,0 +1,22 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Infectious Disease Assessment Tools" description="Infectious disease assessment tools used in nursing">
+  <a href={`${import.meta.env.BASE_URL}/`} class="back-link">← Back to all categories</a>
+  <div class="badge">Infectious Disease</div>
+  <h1>Infectious Disease Assessment Tools</h1>
+  <p>Clinical prediction rules and surveillance criteria for pneumonia, pharyngitis, C. difficile, and healthcare-associated infections.</p>
+
+  <div class="tool-list">
+    <h2>Assessment Tools</h2>
+    <ul>
+      <li><strong>PORT/PSI Score (Pneumonia Severity Index)</strong> — Community-acquired pneumonia severity: 20-variable score assigning patients to Class I–V risk categories. Class I–II can be treated outpatient; Class IV–V requires hospitalization.</li>
+      <li><strong>Centor Criteria (Modified McIsaac)</strong> — Streptococcal pharyngitis probability: tonsillar exudates, tender anterior cervical lymphadenopathy, fever, no cough (−1 for age ≥45). Score ≥3 supports testing or empirical treatment.</li>
+      <li><strong>IDSA/ATS CAP Criteria</strong> — Major and minor criteria for ICU admission in community-acquired pneumonia. Two major criteria (septic shock, mechanical ventilation) or three of nine minor criteria indicate ICU need.</li>
+      <li><strong>CDI Severity Score (C. difficile Infection)</strong> — Severity classification using WBC, serum creatinine, age, and comorbidities: mild-moderate, severe, and fulminant CDI; guides vancomycin vs. metronidazole selection and surgical consult threshold.</li>
+      <li><strong>HIV/AIDS WHO Clinical Staging</strong> — Four clinical stages based on opportunistic infections, malignancies, and functional status: Stage 1 (asymptomatic) to Stage 4 (AIDS-defining illness).</li>
+      <li><strong>HAI Surveillance Criteria (NHSN Definitions)</strong> — National Healthcare Safety Network standardized definitions for healthcare-associated infections including CLABSI, CAUTI, SSI, and VAP; used for surveillance reporting and quality metrics.</li>
+    </ul>
+  </div>
+</Layout>

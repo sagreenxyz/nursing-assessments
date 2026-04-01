@@ -1,0 +1,20 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Trauma Assessment Tools" description="Trauma assessment tools used in nursing">
+  <a href={`${import.meta.env.BASE_URL}/`} class="back-link">← Back to all categories</a>
+  <div class="badge">Trauma</div>
+  <h1>Trauma Assessment Tools</h1>
+  <p>Standardized scoring systems for trauma severity, survival probability, and primary survey in traumatic injury.</p>
+
+  <div class="tool-list">
+    <h2>Assessment Tools</h2>
+    <ul>
+      <li><strong>ISS (Injury Severity Score)</strong> — Anatomical severity score based on the six Abbreviated Injury Scale body regions; sum of squares of the three highest AIS scores. ISS &gt;15 = major trauma; &gt;25 = severe trauma.</li>
+      <li><strong>RTS (Revised Trauma Score)</strong> — Physiological triage and outcome score combining GCS, systolic BP, and respiratory rate. Used in TRISS methodology; lower scores indicate more severe physiological compromise.</li>
+      <li><strong>TRISS (Trauma and Injury Severity Score)</strong> — Survival probability calculation combining ISS and RTS with age correction. Used for trauma quality benchmarking and comparing outcomes across trauma centers.</li>
+      <li><strong>FAST Exam (Focused Assessment with Sonography in Trauma)</strong> — Bedside ultrasound protocol assessing four windows: pericardial (cardiac tamponade), right upper quadrant (hepatic/renal), left upper quadrant (splenic/renal), and pelvis (bladder) for free fluid. Extended eFAST adds bilateral lung views for pneumothorax/hemothorax.</li>
+    </ul>
+  </div>
+</Layout>

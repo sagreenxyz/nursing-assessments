@@ -1,0 +1,28 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Neonatal Assessment Tools" description="Neonatal assessment tools used in nursing">
+  <a href={`${import.meta.env.BASE_URL}/`} class="back-link">← Back to all categories</a>
+  <div class="badge">Neonatal</div>
+  <h1>Neonatal Assessment Tools</h1>
+  <p>Standardized tools for newborn assessment, gestational age estimation, neonatal illness severity, and neonatal abstinence syndrome.</p>
+
+  <div class="tool-list">
+    <h2>Assessment Tools</h2>
+    <ul>
+      <li><strong>APGAR Score</strong> — Newborn condition assessment at 1 and 5 minutes: Appearance (color), Pulse, Grimace (reflex), Activity (tone), Respiration. Score 0–2 each; total 0–10. Score &lt;7 at 5 minutes warrants reassessment; &lt;4 requires resuscitation.</li>
+      <li><strong>Finnegan Neonatal Abstinence Scoring Tool</strong> — 21-item assessment of neonatal abstinence syndrome severity; score ≥8 (two consecutive) or ≥12 (once) typically triggers pharmacologic treatment.</li>
+      <li><strong>Eat Sleep Console (ESC)</strong> — Functional approach to NAS management focusing on the infant's ability to eat, sleep, and be consoled rather than pharmacological score thresholds.</li>
+      <li><strong>Silverman-Anderson Score</strong> — Neonatal respiratory distress: upper chest retraction, lower chest retraction, xiphoid retraction, nares dilation, expiratory grunt. Score 0 = no distress; 10 = maximum distress.</li>
+      <li><strong>SNAPPE-II (Score for Neonatal Acute Physiology with Perinatal Extension)</strong> — Neonatal illness severity and mortality prediction using mean BP, temperature, PO₂/FiO₂, pH, seizures, urine output, and birth weight, small for gestational age, and Apgar score.</li>
+      <li><strong>CRIB Score (Clinical Risk Index for Babies)</strong> — Neonatal risk scoring using gestational age, birth weight, congenital malformations, maximum base excess, and FiO₂ in the first 12 hours.</li>
+      <li><strong>Dubowitz Score</strong> — Gestational age assessment using 11 neurological and 10 external criteria; accurate ±1.2 weeks; can be performed up to 5 days post-birth.</li>
+      <li><strong>New Ballard Score</strong> — Updated gestational age estimation using 6 neuromuscular and 6 physical maturity criteria; includes extremely premature infants (20 weeks) and posture assessment.</li>
+      <li><strong>Ballard Score</strong> — Original gestational age assessment (13 criteria); predecessor to New Ballard Score; estimates age 26–44 weeks.</li>
+      <li><strong>CRIES Scale</strong> — Neonatal postoperative pain: Crying, Requires O₂, Increased vital signs, Expression, Sleeplessness. Score 0–10; ≥4 suggests pharmacological pain management.</li>
+      <li><strong>NIPS (Neonatal Infant Pain Scale)</strong> — Six-item behavioral pain assessment: facial expression, cry, breathing, arms, legs, state of arousal. Score ≥3 indicates significant pain.</li>
+      <li><strong>Newborn Metabolic Screening</strong> — State-mandated bloodspot screening for congenital metabolic, endocrine, and hematological disorders; timing and conditions screened vary by state/country.</li>
+    </ul>
+  </div>
+</Layout>

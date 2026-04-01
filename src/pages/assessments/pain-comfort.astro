@@ -1,0 +1,27 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Pain & Comfort Assessment Tools" description="Assessment tools for pain and comfort in nursing">
+  <a href={`${import.meta.env.BASE_URL}/`} class="back-link">← Back to all categories</a>
+  <div class="badge">Pain & Comfort</div>
+  <h1>Pain &amp; Comfort Assessment Tools</h1>
+  <p>Tools for measuring pain intensity, quality, and impact across patient populations and clinical settings.</p>
+
+  <div class="tool-list">
+    <h2>Assessment Tools</h2>
+    <ul>
+      <li><strong>NRS (Numeric Rating Scale)</strong> — Patient self-reports pain intensity on a 0–10 scale; 0 = no pain, 10 = worst imaginable pain. Used in cognitively intact adults.</li>
+      <li><strong>VAS (Visual Analog Scale)</strong> — A 100 mm horizontal line; patient marks pain intensity. Provides continuous measurement; common in research settings.</li>
+      <li><strong>FLACC Scale</strong> — Observational tool for non-verbal or preverbal patients. Scores Face, Legs, Activity, Cry, and Consolability (0–2 each); total 0–10.</li>
+      <li><strong>CPOT (Critical Care Pain Observation Tool)</strong> — Behavioral pain assessment for ICU patients unable to self-report. Evaluates facial expression, body movements, muscle tension, and ventilator compliance.</li>
+      <li><strong>BPS (Behavioral Pain Scale)</strong> — Used in intubated ICU patients. Scores facial expression, upper limb movements, and compliance with mechanical ventilation (3–12).</li>
+      <li><strong>PAINAD (Pain Assessment in Advanced Dementia)</strong> — Five-item observational scale for patients with advanced dementia who cannot self-report pain. Scores breathing, vocalization, facial expression, body language, and consolability.</li>
+      <li><strong>Faces Pain Scale-Revised (FPS-R)</strong> — Six faces ranging from no pain to maximum pain. Validated for children ages 4–12; also used with cognitively impaired adults.</li>
+      <li><strong>CRIES Scale</strong> — Neonatal postoperative pain tool. Scores Crying, Requires O₂, Increased vital signs, Expression, Sleeplessness (0–2 each); total 0–10.</li>
+      <li><strong>NIPS (Neonatal Infant Pain Scale)</strong> — Behavioral tool for neonates. Evaluates facial expression, cry, breathing patterns, arms, legs, and state of arousal. Score ≥3 indicates pain.</li>
+      <li><strong>COMFORT Scale</strong> — Pediatric ICU pain and sedation tool. Assesses alertness, calmness, respiratory distress, movement, facial tension, and muscle tone. Scores 6–30.</li>
+      <li><strong>Sickle Cell Pain Assessment</strong> — Multidimensional pain assessment adapted for sickle cell disease patients; incorporates pain location, quality, and functional impact in addition to numeric intensity.</li>
+    </ul>
+  </div>
+</Layout>

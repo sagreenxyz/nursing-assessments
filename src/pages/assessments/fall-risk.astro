@@ -1,0 +1,23 @@
+---
+import Layout from '../../layouts/Layout.astro';
+---
+
+<Layout title="Fall Risk Assessment Tools" description="Assessment tools for fall risk in nursing">
+  <a href={`${import.meta.env.BASE_URL}/`} class="back-link">← Back to all categories</a>
+  <div class="badge">Fall Risk</div>
+  <h1>Fall Risk Assessment Tools</h1>
+  <p>Evidence-based tools for identifying patients at risk for falls across care settings and age groups.</p>
+
+  <div class="tool-list">
+    <h2>Assessment Tools</h2>
+    <ul>
+      <li><strong>Morse Fall Scale</strong> — Six-item scale for hospitalized adults. Scores fall history, secondary diagnosis, ambulatory aids, IV/heparin lock, gait, and mental status. Score ≥45 = high risk.</li>
+      <li><strong>STRATIFY (St. Thomas Risk Assessment Tool)</strong> — Five-item tool validated for older adult inpatients. Assesses fall history, agitation, visual impairment, frequent toileting, and transfer/mobility score.</li>
+      <li><strong>Hendrich II Fall Risk Model</strong> — Eight-item scale for post-acute and acute care. Evaluates confusion, depression, altered elimination, dizziness, gender, prescribed medications, and get-up-and-go ability.</li>
+      <li><strong>STEADI (Stopping Elderly Accidents, Deaths & Injuries)</strong> — CDC fall-prevention toolkit for older adults. Includes screening questions, risk factor identification, and evidence-based intervention recommendations.</li>
+      <li><strong>Berg Balance Scale</strong> — 14-item functional balance assessment. Tasks include sitting to standing, standing unsupported, transfers, reaching, turning, and stepping. Scores 0–56; below 45 suggests fall risk.</li>
+      <li><strong>Tinetti POMA (Performance-Oriented Mobility Assessment)</strong> — Evaluates gait (12 points) and balance (16 points); total 0–28. Score &lt;19 indicates high fall risk; 19–24 indicates moderate risk.</li>
+      <li><strong>Timed Up and Go (TUG)</strong> — Patient rises from chair, walks 3 meters, turns, returns, and sits. Time &gt;12 seconds indicates increased fall risk in community-dwelling older adults.</li>
+    </ul>
+  </div>
+</Layout>
